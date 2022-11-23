@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Font size</title>
+  </head>
+  <body>
+    <div class="fontsize">
+      <div class="input">
+        <input class="get" id="get" placeholder="Type something" />
+        <button class="h1" id="h1">h1</button>
+        <button class="h2" id="h2">h2</button>
+        <button class="h3" id="h3">h3</button>
+      </div>
+    </div>
+    <script>
+      let inp = document.getElementById("get");
+      let change1 = document.getElementById("h1");
+      let change2 = document.getElementById("h2");
+      let change3 = document.getElementById("h3");
+      change1.addEventListener("click", xx_large);
+      function xx_large() {
+        inp.style.fontSize = "40px";
+      }
+      change2.addEventListener("click", x_large);
+      function x_large() {
+        inp.style.fontSize = "30px";
+      }
+      change3.addEventListener("click", large);
+      function large() {
+        inp.style.fontSize = "20px";
+      }
+    </script>
+  </body>
+</html>
